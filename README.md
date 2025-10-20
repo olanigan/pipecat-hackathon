@@ -2,7 +2,7 @@
 
 This project demonstrates an AI research copilot built with [Pipecat](https://github.com/pipecat-ai/pipecat) for voice interactions, integrated with [Langfuse](https://langfuse.com/) for conversation tracing and analysis.
 
-[![Pipecat example video](https://github.com/user-attachments/assets/293b7850-fe37-402d-a45b-7dbaa9f9bc0e)](https://www.youtube.com/embed/WbtpjaosrEQ?si=YO4SMldtjp9t_3ea)
+[![AI Research Copilot demo video](https://img.youtube.com/vi/BnudWaCOQeg/0.jpg)](https://www.youtube.com/watch?v=BnudWaCOQeg)
 
 ## Prerequisites
 
