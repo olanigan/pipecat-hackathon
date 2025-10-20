@@ -1,6 +1,6 @@
-# Langchat
+# AI Research Copilot
 
-This example shows how to create a conversational voice application with [Pipecat](https://github.com/pipecat-ai/pipecat) and [Gemini](https://cloud.google.com/text-to-speech/docs/gemini-tts) and trace the conversation with [Langfuse](https://langfuse.com/).
+This project demonstrates an AI research copilot built with [Pipecat](https://github.com/pipecat-ai/pipecat) for voice interactions, integrated with [Langfuse](https://langfuse.com/) for conversation tracing and analysis.
 
 [![Pipecat example video](https://github.com/user-attachments/assets/293b7850-fe37-402d-a45b-7dbaa9f9bc0e)](https://www.youtube.com/embed/WbtpjaosrEQ?si=YO4SMldtjp9t_3ea)
 
@@ -34,7 +34,7 @@ This example shows how to create a conversational voice application with [Pipeca
    uv sync
    ```
 
-3. Run the bot:
+3. Run the AI research copilot:
 
    ```sh
    uv run bot.py --transport daily # we're using daily.co for Real-Time communications
@@ -64,8 +64,8 @@ This example shows how to create a conversational voice application with [Pipeca
    npm run dev
    ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) with your browser to access the AI research copilot interface.
 
-### Deploying to production?
+### Deploying to production
 
 Follow the instructions to [deploying the server](https://docs.pipecat.ai/deployment/overview) and [deploying the frontend app](https://vercel.com/docs/frameworks/full-stack/nextjs).
