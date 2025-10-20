@@ -1,0 +1,37 @@
+2025-10-19 19:47:58.884 | INFO     | pipecat:<module>:14 - ᓚᘏᗢ Pipecat 0.0.82 (Python 3.13.5 (main, Jul 23 2025, 00:18:28) [Clang 20.1.4 ]) ᓚᘏᗢ
+2025-10-19 19:48:06.680 | INFO     | __main__:<module>:69 - Langfuse tracing enabled
+2025-10-19 19:48:07.131 | INFO     | __main__:<module>:75 - Langfuse client initialized
+2025-10-19 19:48:07.132 | INFO     | __main__:<module>:87 - 🔧 Initializing MCP clients at startup...
+2025-10-19 19:48:07.132 | INFO     | __main__:<module>:101 - ⚠️ MCP Labs skipped (website, not MCP server)
+2025-10-19 19:48:07.135 | INFO     | __main__:<module>:113 - ✅ ArXiv MCP client initialized successfully
+2025-10-19 19:48:07.136 | INFO     | __main__:<module>:127 - ✅ HuggingFace MCP client initialized successfully
+2025-10-19 19:48:07.207 | ERROR    | pipecat.transports.network.webrtc_connection:<module>:35 - Exception: No module named 'aiortc'
+2025-10-19 19:48:07.207 | ERROR    | pipecat.transports.network.webrtc_connection:<module>:36 - In order to use the SmallWebRTC, you need to `pip install pipecat-ai[webrtc]`.
+
+🚀 Bot ready!
+   → Open http://localhost:7860/client in your browser
+
+Looking for dist directory at: /Users/unblockd/company/voice-agents/pipegem-hackathon/app/server/.venv/lib/python3.13/site-packages/pipecat_ai_small_webrtc_prebuilt/client/dist
+Traceback (most recent call last):
+  File "/Users/unblockd/company/voice-agents/pipegem-hackathon/app/server/.venv/lib/python3.13/site-packages/pipecat/transports/network/webrtc_connection.py", line 25, in <module>
+    from aiortc import (
+    ...<5 lines>...
+    )
+ModuleNotFoundError: No module named 'aiortc'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/unblockd/company/voice-agents/pipegem-hackathon/app/server/bot.py", line 515, in <module>
+    main()
+    ~~~~^^
+  File "/Users/unblockd/company/voice-agents/pipegem-hackathon/app/server/.venv/lib/python3.13/site-packages/pipecat/runner/run.py", line 536, in main
+    app = _create_server_app(args.transport, args.host, args.proxy, args.esp32)
+  File "/Users/unblockd/company/voice-agents/pipegem-hackathon/app/server/.venv/lib/python3.13/site-packages/pipecat/runner/run.py", line 169, in _create_server_app
+    _setup_webrtc_routes(app, esp32_mode=esp32_mode, host=host)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/unblockd/company/voice-agents/pipegem-hackathon/app/server/.venv/lib/python3.13/site-packages/pipecat/runner/run.py", line 185, in _setup_webrtc_routes
+    from pipecat.transports.network.webrtc_connection import SmallWebRTCConnection
+  File "/Users/unblockd/company/voice-agents/pipegem-hackathon/app/server/.venv/lib/python3.13/site-packages/pipecat/transports/network/webrtc_connection.py", line 37, in <module>
+    raise Exception(f"Missing module: {e}")
+Exception: Missing module: No module named 'aiortc'

@@ -1,0 +1,29 @@
+[project]
+name = "server"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "pipecat-ai[google,daily,cartesia,runner,silero,tracing]>=0.0.82",
+    "mcp>=1.0.0",
+    "langfuse>=2.0.0",
+    "arxiv-mcp-server",
+    "huggingface",
+    "aiortc>=1.14.0",
+    "python-dotenv>=1.0.0",
+    "loguru>=0.7.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-asyncio>=0.21.0",
+    "streamlit>=1.39.0",
+    "sounddevice>=0.4.6",
+    "scipy>=1.12.0",
+]
+
+[tool.uv.sources]
+arxiv-mcp-server = { git = "https://github.com/blazickjp/arxiv-mcp-server.git" }
+huggingface = { git = "https://github.com/shreyaskarnik/huggingface-mcp-server.git" }
